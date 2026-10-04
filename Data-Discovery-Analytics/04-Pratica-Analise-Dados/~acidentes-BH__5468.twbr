@@ -1,0 +1,2784 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0912.1023                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='383a91f03764417df1814fc07c8dfdf6bba48b08710929699484116a0e909a7b' _.fcp.WorkbookFingerprinting.true...creator-author-id='383a91f03764417df1814fc07c8dfdf6bba48b08710929699484116a0e909a7b' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='383a91f03764417df1814fc07c8dfdf6bba48b08710929699484116a0e909a7b' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='383a91f03764417df1814fc07c8dfdf6bba48b08710929699484116a0e909a7b' locale='pt_BR' original-version='18.1' source-build='2026.2.3 (20262.26.0912.1023)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='boletins+ (dados_carga_pbh)' inline='true' name='federated.1vjy2d51ccxnpg160gmgz0nrci1l' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dados_carga_pbh' name='excel-direct.13mkesq19yuyy112yy2hc1ei6epj'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Alexandre/OneDrive/Desktop/Data-Science-Postgrad-PUC-Minas/Data-Discovery-Analytics/04-Pratica-Analise-Dados/data/dados_carga_pbh.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='boletins' table='[boletins$]' type='table'>
+            <columns gridOrigin='A1:U10001:no:A1:U10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='numero_boletim' ordinal='0' />
+              <column datatype='string' name='tipo_acidente' ordinal='1' />
+              <column datatype='string' name='desc_tipo_acidente' ordinal='2' />
+              <column datatype='integer' name='cod_tempo' ordinal='3' />
+              <column datatype='string' name='desc_tempo' ordinal='4' />
+              <column datatype='integer' name='cod_pavimento' ordinal='5' />
+              <column datatype='string' name='pavimento' ordinal='6' />
+              <column datatype='integer' name='cod_regional' ordinal='7' />
+              <column datatype='string' name='desc_regional' ordinal='8' />
+              <column datatype='string' name='origem_boletim' ordinal='9' />
+              <column datatype='integer' name='velocidade_permitida' ordinal='10' />
+              <column datatype='string' name='indicador_fatalidade' ordinal='11' />
+              <column datatype='integer' name='valor_ups' ordinal='12' />
+              <column datatype='string' name='descricao_ups' ordinal='13' />
+              <column datatype='date' name='Data' ordinal='14' />
+              <column datatype='datetime' name='Hora' ordinal='15' />
+              <column datatype='string' name='Faixa_hora' ordinal='16' />
+              <column datatype='integer' name='Faixa_hora_num' ordinal='17' />
+              <column datatype='integer' name='Mês' ordinal='18' />
+              <column datatype='integer' name='Ano' ordinal='19' />
+              <column datatype='integer' name='Dia' ordinal='20' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='coordenadas' table='[coordenadas$]' type='table'>
+            <columns gridOrigin='A1:C10001:no:A1:C10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='numero_bol' ordinal='0' />
+              <column datatype='real' name='longitude' ordinal='1' />
+              <column datatype='real' name='latitude' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='envolvidos1' table='[envolvidos$]' type='table'>
+            <columns gridOrigin='A1:P10001:no:A1:P10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='num_boletim' ordinal='0' />
+              <column datatype='integer' name='numero_envolvido' ordinal='1' />
+              <column datatype='string' name='condutor' ordinal='2' />
+              <column datatype='integer' name='codigo_severidade' ordinal='3' />
+              <column datatype='string' name='desc_severidade' ordinal='4' />
+              <column datatype='string' name='sexo' ordinal='5' />
+              <column datatype='string' name='cinto_seguranca' ordinal='6' />
+              <column datatype='string' name='Embreagues' ordinal='7' />
+              <column datatype='integer' name='Idade' ordinal='8' />
+              <column datatype='string' name='categoria_habilitacao' ordinal='9' />
+              <column datatype='string' name='descricao_habilitacao' ordinal='10' />
+              <column datatype='string' name='especie_veiculo' ordinal='11' />
+              <column datatype='string' name='pedestre' ordinal='12' />
+              <column datatype='string' name='passageiro' ordinal='13' />
+              <column datatype='date' name='Data' ordinal='14' />
+              <column datatype='datetime' name='Hora' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='envolvidos' table='[envolvidos$]' type='table'>
+            <columns gridOrigin='A1:P10001:no:A1:P10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='num_boletim' ordinal='0' />
+              <column datatype='integer' name='numero_envolvido' ordinal='1' />
+              <column datatype='string' name='condutor' ordinal='2' />
+              <column datatype='integer' name='codigo_severidade' ordinal='3' />
+              <column datatype='string' name='desc_severidade' ordinal='4' />
+              <column datatype='string' name='sexo' ordinal='5' />
+              <column datatype='string' name='cinto_seguranca' ordinal='6' />
+              <column datatype='string' name='Embreagues' ordinal='7' />
+              <column datatype='integer' name='Idade' ordinal='8' />
+              <column datatype='string' name='categoria_habilitacao' ordinal='9' />
+              <column datatype='string' name='descricao_habilitacao' ordinal='10' />
+              <column datatype='string' name='especie_veiculo' ordinal='11' />
+              <column datatype='string' name='pedestre' ordinal='12' />
+              <column datatype='string' name='passageiro' ordinal='13' />
+              <column datatype='date' name='Data' ordinal='14' />
+              <column datatype='datetime' name='Hora' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='logradouros' table='[logradouros$]' type='table'>
+            <columns gridOrigin='A1:K10001:no:A1:K10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='Nº_boletim' ordinal='0' />
+              <column datatype='string' name='nome_municipio' ordinal='1' />
+              <column datatype='integer' name='seq_logradouros' ordinal='2' />
+              <column datatype='string' name='tipo_logradouro' ordinal='3' />
+              <column datatype='string' name='nome_logradouro' ordinal='4' />
+              <column datatype='string' name='tipo_bairro' ordinal='5' />
+              <column datatype='string' name='descricao_tipo_bairro' ordinal='6' />
+              <column datatype='integer' name='Nº_imovel' ordinal='7' />
+              <column datatype='string' name='Bairro' ordinal='8' />
+              <column datatype='date' name='Data' ordinal='9' />
+              <column datatype='datetime' name='Hora' ordinal='10' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Ano]' value='[boletins].[Ano]' />
+          <map key='[Bairro]' value='[logradouros].[Bairro]' />
+          <map key='[Data (envolvidos)]' value='[envolvidos].[Data]' />
+          <map key='[Data (envolvidos1)]' value='[envolvidos1].[Data]' />
+          <map key='[Data (logradouros)]' value='[logradouros].[Data]' />
+          <map key='[Data]' value='[boletins].[Data]' />
+          <map key='[Dia]' value='[boletins].[Dia]' />
+          <map key='[Embreagues (envolvidos1)]' value='[envolvidos1].[Embreagues]' />
+          <map key='[Embreagues]' value='[envolvidos].[Embreagues]' />
+          <map key='[Faixa_hora]' value='[boletins].[Faixa_hora]' />
+          <map key='[Faixa_hora_num]' value='[boletins].[Faixa_hora_num]' />
+          <map key='[Hora (envolvidos)]' value='[envolvidos].[Hora]' />
+          <map key='[Hora (envolvidos1)]' value='[envolvidos1].[Hora]' />
+          <map key='[Hora (logradouros)]' value='[logradouros].[Hora]' />
+          <map key='[Hora]' value='[boletins].[Hora]' />
+          <map key='[Idade (envolvidos1)]' value='[envolvidos1].[Idade]' />
+          <map key='[Idade]' value='[envolvidos].[Idade]' />
+          <map key='[Mês]' value='[boletins].[Mês]' />
+          <map key='[Nº_boletim]' value='[logradouros].[Nº_boletim]' />
+          <map key='[Nº_imovel]' value='[logradouros].[Nº_imovel]' />
+          <map key='[categoria_habilitacao (envolvidos1)]' value='[envolvidos1].[categoria_habilitacao]' />
+          <map key='[categoria_habilitacao]' value='[envolvidos].[categoria_habilitacao]' />
+          <map key='[cinto_seguranca (envolvidos1)]' value='[envolvidos1].[cinto_seguranca]' />
+          <map key='[cinto_seguranca]' value='[envolvidos].[cinto_seguranca]' />
+          <map key='[cod_pavimento]' value='[boletins].[cod_pavimento]' />
+          <map key='[cod_regional]' value='[boletins].[cod_regional]' />
+          <map key='[cod_tempo]' value='[boletins].[cod_tempo]' />
+          <map key='[codigo_severidade (envolvidos1)]' value='[envolvidos1].[codigo_severidade]' />
+          <map key='[codigo_severidade]' value='[envolvidos].[codigo_severidade]' />
+          <map key='[condutor (envolvidos1)]' value='[envolvidos1].[condutor]' />
+          <map key='[condutor]' value='[envolvidos].[condutor]' />
+          <map key='[desc_regional]' value='[boletins].[desc_regional]' />
+          <map key='[desc_severidade (envolvidos1)]' value='[envolvidos1].[desc_severidade]' />
+          <map key='[desc_severidade]' value='[envolvidos].[desc_severidade]' />
+          <map key='[desc_tempo]' value='[boletins].[desc_tempo]' />
+          <map key='[desc_tipo_acidente]' value='[boletins].[desc_tipo_acidente]' />
+          <map key='[descricao_habilitacao (envolvidos1)]' value='[envolvidos1].[descricao_habilitacao]' />
+          <map key='[descricao_habilitacao]' value='[envolvidos].[descricao_habilitacao]' />
+          <map key='[descricao_tipo_bairro]' value='[logradouros].[descricao_tipo_bairro]' />
+          <map key='[descricao_ups]' value='[boletins].[descricao_ups]' />
+          <map key='[especie_veiculo (envolvidos1)]' value='[envolvidos1].[especie_veiculo]' />
+          <map key='[especie_veiculo]' value='[envolvidos].[especie_veiculo]' />
+          <map key='[indicador_fatalidade]' value='[boletins].[indicador_fatalidade]' />
+          <map key='[latitude]' value='[coordenadas].[latitude]' />
+          <map key='[longitude]' value='[coordenadas].[longitude]' />
+          <map key='[nome_logradouro]' value='[logradouros].[nome_logradouro]' />
+          <map key='[nome_municipio]' value='[logradouros].[nome_municipio]' />
+          <map key='[num_boletim (envolvidos1)]' value='[envolvidos1].[num_boletim]' />
+          <map key='[num_boletim]' value='[envolvidos].[num_boletim]' />
+          <map key='[numero_bol]' value='[coordenadas].[numero_bol]' />
+          <map key='[numero_boletim]' value='[boletins].[numero_boletim]' />
+          <map key='[numero_envolvido (envolvidos1)]' value='[envolvidos1].[numero_envolvido]' />
+          <map key='[numero_envolvido]' value='[envolvidos].[numero_envolvido]' />
+          <map key='[origem_boletim]' value='[boletins].[origem_boletim]' />
+          <map key='[passageiro (envolvidos1)]' value='[envolvidos1].[passageiro]' />
+          <map key='[passageiro]' value='[envolvidos].[passageiro]' />
+          <map key='[pavimento]' value='[boletins].[pavimento]' />
+          <map key='[pedestre (envolvidos1)]' value='[envolvidos1].[pedestre]' />
+          <map key='[pedestre]' value='[envolvidos].[pedestre]' />
+          <map key='[seq_logradouros]' value='[logradouros].[seq_logradouros]' />
+          <map key='[sexo (envolvidos1)]' value='[envolvidos1].[sexo]' />
+          <map key='[sexo]' value='[envolvidos].[sexo]' />
+          <map key='[tipo_acidente]' value='[boletins].[tipo_acidente]' />
+          <map key='[tipo_bairro]' value='[logradouros].[tipo_bairro]' />
+          <map key='[tipo_logradouro]' value='[logradouros].[tipo_logradouro]' />
+          <map key='[valor_ups]' value='[boletins].[valor_ups]' />
+          <map key='[velocidade_permitida]' value='[boletins].[velocidade_permitida]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U10001:no:A1:U10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[coordenadas]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C10001:no:A1:C10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P10001:no:A1:P10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P10001:no:A1:P10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K10001:no:A1:K10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numero_boletim</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[numero_boletim]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>numero_boletim</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_acidente</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tipo_acidente]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>tipo_acidente</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc_tipo_acidente</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc_tipo_acidente]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>desc_tipo_acidente</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cod_tempo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cod_tempo]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>cod_tempo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc_tempo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc_tempo]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>desc_tempo</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cod_pavimento</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cod_pavimento]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>cod_pavimento</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pavimento</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pavimento]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>pavimento</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cod_regional</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cod_regional]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>cod_regional</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc_regional</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc_regional]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>desc_regional</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origem_boletim</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[origem_boletim]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>origem_boletim</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>velocidade_permitida</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[velocidade_permitida]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>velocidade_permitida</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>indicador_fatalidade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[indicador_fatalidade]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>indicador_fatalidade</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>valor_ups</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[valor_ups]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>valor_ups</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>descricao_ups</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[descricao_ups]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>descricao_ups</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Data]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>Data</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hora</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Hora]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>Hora</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Faixa_hora</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Faixa_hora]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>Faixa_hora</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Faixa_hora_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Faixa_hora_num]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>Faixa_hora_num</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mês</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mês]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>Mês</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ano]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>Ano</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dia</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dia]</local-name>
+            <parent-name>[boletins]</parent-name>
+            <remote-alias>Dia</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numero_bol</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[numero_bol]</local-name>
+            <parent-name>[coordenadas]</parent-name>
+            <remote-alias>numero_bol</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[coordenadas]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[coordenadas]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_boletim</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[num_boletim (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>num_boletim</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numero_envolvido</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[numero_envolvido (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>numero_envolvido</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condutor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[condutor (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>condutor</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>codigo_severidade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[codigo_severidade (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>codigo_severidade</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc_severidade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc_severidade (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>desc_severidade</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sexo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sexo (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>sexo</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cinto_seguranca</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cinto_seguranca (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>cinto_seguranca</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Embreagues</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Embreagues (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>Embreagues</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Idade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Idade (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>Idade</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoria_habilitacao</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[categoria_habilitacao (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>categoria_habilitacao</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>descricao_habilitacao</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[descricao_habilitacao (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>descricao_habilitacao</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>especie_veiculo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[especie_veiculo (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>especie_veiculo</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pedestre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pedestre (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>pedestre</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>passageiro</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[passageiro (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>passageiro</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Data (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>Data</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hora</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Hora (envolvidos1)]</local-name>
+            <parent-name>[envolvidos1]</parent-name>
+            <remote-alias>Hora</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_boletim</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[num_boletim]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>num_boletim</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numero_envolvido</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[numero_envolvido]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>numero_envolvido</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condutor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[condutor]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>condutor</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>codigo_severidade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[codigo_severidade]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>codigo_severidade</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc_severidade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc_severidade]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>desc_severidade</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sexo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sexo]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>sexo</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cinto_seguranca</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cinto_seguranca]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>cinto_seguranca</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Embreagues</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Embreagues]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>Embreagues</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Idade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Idade]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>Idade</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoria_habilitacao</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[categoria_habilitacao]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>categoria_habilitacao</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>descricao_habilitacao</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[descricao_habilitacao]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>descricao_habilitacao</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>especie_veiculo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[especie_veiculo]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>especie_veiculo</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pedestre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pedestre]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>pedestre</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>passageiro</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[passageiro]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>passageiro</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Data (envolvidos)]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>Data</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hora</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Hora (envolvidos)]</local-name>
+            <parent-name>[envolvidos]</parent-name>
+            <remote-alias>Hora</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nº_boletim</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Nº_boletim]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>Nº_boletim</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_municipio</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_municipio]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>nome_municipio</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seq_logradouros</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[seq_logradouros]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>seq_logradouros</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_logradouro</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tipo_logradouro]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>tipo_logradouro</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_logradouro</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_logradouro]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>nome_logradouro</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_bairro</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tipo_bairro]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>tipo_bairro</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>descricao_tipo_bairro</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[descricao_tipo_bairro]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>descricao_tipo_bairro</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nº_imovel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nº_imovel]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>Nº_imovel</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bairro</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bairro]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>Bairro</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Data (logradouros)]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>Data</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hora</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Hora (logradouros)]</local-name>
+            <parent-name>[logradouros]</parent-name>
+            <remote-alias>Hora</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Faixa hora' datatype='string' name='[Faixa_hora]' role='dimension' type='nominal' />
+      <column caption='Faixa hora num' datatype='integer' name='[Faixa_hora_num]' role='dimension' type='ordinal' />
+      <column caption='Nº boletim' datatype='string' name='[Nº_boletim]' role='dimension' type='nominal' />
+      <column caption='Nº imovel' datatype='integer' name='[Nº_imovel]' role='measure' type='quantitative' />
+      <column caption='boletins' datatype='table' name='[__tableau_internal_object_id__].[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]' role='measure' type='quantitative' />
+      <column caption='coordenadas' datatype='table' name='[__tableau_internal_object_id__].[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]' role='measure' type='quantitative' />
+      <column caption='envolvidos1' datatype='table' name='[__tableau_internal_object_id__].[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]' role='measure' type='quantitative' />
+      <column caption='envolvidos' datatype='table' name='[__tableau_internal_object_id__].[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]' role='measure' type='quantitative' />
+      <column caption='logradouros' datatype='table' name='[__tableau_internal_object_id__].[logradouros_7A4707B9B2564D5E951ACA57BF58B140]' role='measure' type='quantitative' />
+      <column caption='Categoria Habilitacao (Envolvidos1)' datatype='string' name='[categoria_habilitacao (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Categoria Habilitacao' datatype='string' name='[categoria_habilitacao]' role='dimension' type='nominal' />
+      <column caption='Cinto Seguranca (Envolvidos1)' datatype='string' name='[cinto_seguranca (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Cinto Seguranca' datatype='string' name='[cinto_seguranca]' role='dimension' type='nominal' />
+      <column caption='Cod Pavimento' datatype='integer' name='[cod_pavimento]' role='measure' type='quantitative' />
+      <column caption='Cod Regional' datatype='integer' name='[cod_regional]' role='measure' type='quantitative' />
+      <column caption='Cod Tempo' datatype='integer' name='[cod_tempo]' role='measure' type='quantitative' />
+      <column caption='Codigo Severidade (Envolvidos1)' datatype='integer' name='[codigo_severidade (envolvidos1)]' role='measure' type='quantitative' />
+      <column caption='Codigo Severidade' datatype='integer' name='[codigo_severidade]' role='measure' type='quantitative' />
+      <column caption='Condutor (Envolvidos1)' datatype='string' name='[condutor (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Condutor' datatype='string' name='[condutor]' role='dimension' type='nominal' />
+      <column caption='Desc Regional' datatype='string' name='[desc_regional]' role='dimension' type='nominal' />
+      <column caption='Desc Severidade (Envolvidos1)' datatype='string' name='[desc_severidade (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Desc Severidade' datatype='string' name='[desc_severidade]' role='dimension' type='nominal' />
+      <column caption='Desc Tempo' datatype='string' name='[desc_tempo]' role='dimension' type='nominal' />
+      <column caption='Desc Tipo Acidente' datatype='string' name='[desc_tipo_acidente]' role='dimension' type='nominal' />
+      <column caption='Descricao Habilitacao (Envolvidos1)' datatype='string' name='[descricao_habilitacao (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Descricao Habilitacao' datatype='string' name='[descricao_habilitacao]' role='dimension' type='nominal' />
+      <column caption='Descricao Tipo Bairro' datatype='string' name='[descricao_tipo_bairro]' role='dimension' type='nominal' />
+      <column caption='Descricao Ups' datatype='string' name='[descricao_ups]' role='dimension' type='nominal' />
+      <column caption='Especie Veiculo (Envolvidos1)' datatype='string' name='[especie_veiculo (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Especie Veiculo' datatype='string' name='[especie_veiculo]' role='dimension' type='nominal' />
+      <column caption='Indicador Fatalidade' datatype='string' name='[indicador_fatalidade]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Nome Logradouro' datatype='string' name='[nome_logradouro]' role='dimension' type='nominal' />
+      <column caption='Nome Municipio' datatype='string' name='[nome_municipio]' role='dimension' type='nominal' />
+      <column caption='Num Boletim (Envolvidos1)' datatype='string' name='[num_boletim (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Num Boletim' datatype='string' name='[num_boletim]' role='dimension' type='nominal' />
+      <column caption='Numero Bol' datatype='string' name='[numero_bol]' role='dimension' type='nominal' />
+      <column caption='Numero Boletim' datatype='string' name='[numero_boletim]' role='dimension' type='nominal' />
+      <column caption='Numero Envolvido (Envolvidos1)' datatype='integer' name='[numero_envolvido (envolvidos1)]' role='measure' type='quantitative' />
+      <column caption='Numero Envolvido' datatype='integer' name='[numero_envolvido]' role='measure' type='quantitative' />
+      <column caption='Origem Boletim' datatype='string' name='[origem_boletim]' role='dimension' type='nominal' />
+      <column caption='Passageiro (Envolvidos1)' datatype='string' name='[passageiro (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Passageiro' datatype='string' name='[passageiro]' role='dimension' type='nominal' />
+      <column caption='Pavimento' datatype='string' name='[pavimento]' role='dimension' type='nominal' />
+      <column caption='Pedestre (Envolvidos1)' datatype='string' name='[pedestre (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Pedestre' datatype='string' name='[pedestre]' role='dimension' type='nominal' />
+      <column caption='Seq Logradouros' datatype='integer' name='[seq_logradouros]' role='measure' type='quantitative' />
+      <column caption='Sexo (Envolvidos1)' datatype='string' name='[sexo (envolvidos1)]' role='dimension' type='nominal' />
+      <column caption='Sexo' datatype='string' name='[sexo]' role='dimension' type='nominal' />
+      <column caption='Tipo Acidente' datatype='string' name='[tipo_acidente]' role='dimension' type='nominal' />
+      <column caption='Tipo Bairro' datatype='string' name='[tipo_bairro]' role='dimension' type='nominal' />
+      <column caption='Tipo Logradouro' datatype='string' name='[tipo_logradouro]' role='dimension' type='nominal' />
+      <column caption='Valor Ups' datatype='integer' name='[valor_ups]' role='measure' type='quantitative' />
+      <column caption='Velocidade Permitida' datatype='integer' name='[velocidade_permitida]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='pt_BR' class='hyper' dbname='C:/Users/ALEXAN~1/AppData/Local/Temp/TableauTemp/#TableauTemp_08af3yv1ulw1m910eni1b0anxx85.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='09/24/2026 04:58:18 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='boletins_8E6BF7CBDBFB4042A75336654FA0EBDE' table='[Extract].[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]' type='table' />
+            <relation name='coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0' table='[Extract].[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]' type='table' />
+            <relation name='envolvidos_B9FC198BD67D4743A11F2D093605F2C5' table='[Extract].[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]' type='table' />
+            <relation name='envolvidos_C867F142FCAA4D439FF0AF700F0C6522' table='[Extract].[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]' type='table' />
+            <relation name='logradouros_7A4707B9B2564D5E951ACA57BF58B140' table='[Extract].[logradouros_7A4707B9B2564D5E951ACA57BF58B140]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Ano]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[Ano]' />
+            <map key='[Bairro]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[Bairro]' />
+            <map key='[Data (envolvidos)]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[Data]' />
+            <map key='[Data (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[Data]' />
+            <map key='[Data (logradouros)]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[Data]' />
+            <map key='[Data]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[Data]' />
+            <map key='[Dia]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[Dia]' />
+            <map key='[Embreagues (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[Embreagues]' />
+            <map key='[Embreagues]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[Embreagues]' />
+            <map key='[Faixa_hora]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[Faixa_hora]' />
+            <map key='[Faixa_hora_num]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[Faixa_hora_num]' />
+            <map key='[Hora (envolvidos)]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[Hora]' />
+            <map key='[Hora (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[Hora]' />
+            <map key='[Hora (logradouros)]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[Hora]' />
+            <map key='[Hora]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[Hora]' />
+            <map key='[Idade (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[Idade]' />
+            <map key='[Idade]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[Idade]' />
+            <map key='[Mês]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[Mês]' />
+            <map key='[Nº_boletim]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[Nº_boletim]' />
+            <map key='[Nº_imovel]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[Nº_imovel]' />
+            <map key='[categoria_habilitacao (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[categoria_habilitacao]' />
+            <map key='[categoria_habilitacao]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[categoria_habilitacao]' />
+            <map key='[cinto_seguranca (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[cinto_seguranca]' />
+            <map key='[cinto_seguranca]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[cinto_seguranca]' />
+            <map key='[cod_pavimento]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[cod_pavimento]' />
+            <map key='[cod_regional]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[cod_regional]' />
+            <map key='[cod_tempo]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[cod_tempo]' />
+            <map key='[codigo_severidade (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[codigo_severidade]' />
+            <map key='[codigo_severidade]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[codigo_severidade]' />
+            <map key='[condutor (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[condutor]' />
+            <map key='[condutor]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[condutor]' />
+            <map key='[desc_regional]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[desc_regional]' />
+            <map key='[desc_severidade (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[desc_severidade]' />
+            <map key='[desc_severidade]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[desc_severidade]' />
+            <map key='[desc_tempo]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[desc_tempo]' />
+            <map key='[desc_tipo_acidente]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[desc_tipo_acidente]' />
+            <map key='[descricao_habilitacao (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[descricao_habilitacao]' />
+            <map key='[descricao_habilitacao]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[descricao_habilitacao]' />
+            <map key='[descricao_tipo_bairro]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[descricao_tipo_bairro]' />
+            <map key='[descricao_ups]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[descricao_ups]' />
+            <map key='[especie_veiculo (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[especie_veiculo]' />
+            <map key='[especie_veiculo]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[especie_veiculo]' />
+            <map key='[indicador_fatalidade]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[indicador_fatalidade]' />
+            <map key='[latitude]' value='[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0].[latitude]' />
+            <map key='[longitude]' value='[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0].[longitude]' />
+            <map key='[nome_logradouro]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[nome_logradouro]' />
+            <map key='[nome_municipio]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[nome_municipio]' />
+            <map key='[num_boletim (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[num_boletim]' />
+            <map key='[num_boletim]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[num_boletim]' />
+            <map key='[numero_bol]' value='[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0].[numero_bol]' />
+            <map key='[numero_boletim]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[numero_boletim]' />
+            <map key='[numero_envolvido (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[numero_envolvido]' />
+            <map key='[numero_envolvido]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[numero_envolvido]' />
+            <map key='[origem_boletim]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[origem_boletim]' />
+            <map key='[passageiro (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[passageiro]' />
+            <map key='[passageiro]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[passageiro]' />
+            <map key='[pavimento]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[pavimento]' />
+            <map key='[pedestre (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[pedestre]' />
+            <map key='[pedestre]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[pedestre]' />
+            <map key='[seq_logradouros]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[seq_logradouros]' />
+            <map key='[sexo (envolvidos1)]' value='[envolvidos_B9FC198BD67D4743A11F2D093605F2C5].[sexo]' />
+            <map key='[sexo]' value='[envolvidos_C867F142FCAA4D439FF0AF700F0C6522].[sexo]' />
+            <map key='[tipo_acidente]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[tipo_acidente]' />
+            <map key='[tipo_bairro]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[tipo_bairro]' />
+            <map key='[tipo_logradouro]' value='[logradouros_7A4707B9B2564D5E951ACA57BF58B140].[tipo_logradouro]' />
+            <map key='[valor_ups]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[valor_ups]' />
+            <map key='[velocidade_permitida]' value='[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE].[velocidade_permitida]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='boletins+ (dados_carga_pbh)' increment-value='%null%' refresh-type='create' rows-inserted='547970' timestamp-start='2026-09-24 16:57:23.219' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>numero_boletim</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[numero_boletim]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>numero_boletim</remote-alias>
+              <ordinal>0</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>71464</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_acidente</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_acidente]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>tipo_acidente</remote-alias>
+              <ordinal>1</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>desc_tipo_acidente</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[desc_tipo_acidente]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>desc_tipo_acidente</remote-alias>
+              <ordinal>2</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cod_tempo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cod_tempo]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>cod_tempo</remote-alias>
+              <ordinal>3</ordinal>
+              <family>boletins</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>desc_tempo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[desc_tempo]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>desc_tempo</remote-alias>
+              <ordinal>4</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cod_pavimento</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cod_pavimento]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>cod_pavimento</remote-alias>
+              <ordinal>5</ordinal>
+              <family>boletins</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pavimento</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pavimento]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>pavimento</remote-alias>
+              <ordinal>6</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cod_regional</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cod_regional]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>cod_regional</remote-alias>
+              <ordinal>7</ordinal>
+              <family>boletins</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>desc_regional</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[desc_regional]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>desc_regional</remote-alias>
+              <ordinal>8</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>origem_boletim</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[origem_boletim]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>origem_boletim</remote-alias>
+              <ordinal>9</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>velocidade_permitida</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[velocidade_permitida]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>velocidade_permitida</remote-alias>
+              <ordinal>10</ordinal>
+              <family>boletins</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>indicador_fatalidade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[indicador_fatalidade]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>indicador_fatalidade</remote-alias>
+              <ordinal>11</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>valor_ups</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[valor_ups]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>valor_ups</remote-alias>
+              <ordinal>12</ordinal>
+              <family>boletins</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>descricao_ups</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[descricao_ups]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>descricao_ups</remote-alias>
+              <ordinal>13</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Data</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Data]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>Data</remote-alias>
+              <ordinal>14</ordinal>
+              <family>boletins</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6445</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hora</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Hora]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>Hora</remote-alias>
+              <ordinal>15</ordinal>
+              <family>boletins</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3590</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Faixa_hora</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Faixa_hora]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>Faixa_hora</remote-alias>
+              <ordinal>16</ordinal>
+              <family>boletins</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Faixa_hora_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Faixa_hora_num]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>Faixa_hora_num</remote-alias>
+              <ordinal>17</ordinal>
+              <family>boletins</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mês</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mês]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>Mês</remote-alias>
+              <ordinal>18</ordinal>
+              <family>boletins</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ano</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ano]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>Ano</remote-alias>
+              <ordinal>19</ordinal>
+              <family>boletins</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dia</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Dia]</local-name>
+              <parent-name>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</parent-name>
+              <remote-alias>Dia</remote-alias>
+              <ordinal>20</ordinal>
+              <family>boletins</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>numero_bol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[numero_bol]</local-name>
+              <parent-name>[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]</parent-name>
+              <remote-alias>numero_bol</remote-alias>
+              <ordinal>21</ordinal>
+              <family>coordenadas</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69419</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>22</ordinal>
+              <family>coordenadas</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8161</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>23</ordinal>
+              <family>coordenadas</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8161</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_boletim</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[num_boletim (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>num_boletim</remote-alias>
+              <ordinal>24</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>138211</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>numero_envolvido</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[numero_envolvido (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>numero_envolvido</remote-alias>
+              <ordinal>25</ordinal>
+              <family>envolvidos1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>condutor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[condutor (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>condutor</remote-alias>
+              <ordinal>26</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>codigo_severidade</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[codigo_severidade (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>codigo_severidade</remote-alias>
+              <ordinal>27</ordinal>
+              <family>envolvidos1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>desc_severidade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[desc_severidade (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>desc_severidade</remote-alias>
+              <ordinal>28</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sexo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sexo (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>sexo</remote-alias>
+              <ordinal>29</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cinto_seguranca</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cinto_seguranca (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>cinto_seguranca</remote-alias>
+              <ordinal>30</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Embreagues</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Embreagues (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>Embreagues</remote-alias>
+              <ordinal>31</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Idade</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Idade (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>Idade</remote-alias>
+              <ordinal>32</ordinal>
+              <family>envolvidos1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>188</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>categoria_habilitacao</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[categoria_habilitacao (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>categoria_habilitacao</remote-alias>
+              <ordinal>33</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>descricao_habilitacao</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[descricao_habilitacao (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>descricao_habilitacao</remote-alias>
+              <ordinal>34</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>especie_veiculo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[especie_veiculo (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>especie_veiculo</remote-alias>
+              <ordinal>35</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pedestre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pedestre (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>pedestre</remote-alias>
+              <ordinal>36</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>passageiro</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[passageiro (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>passageiro</remote-alias>
+              <ordinal>37</ordinal>
+              <family>envolvidos1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Data</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Data (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>Data</remote-alias>
+              <ordinal>38</ordinal>
+              <family>envolvidos1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>9238</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hora</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Hora (envolvidos1)]</local-name>
+              <parent-name>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</parent-name>
+              <remote-alias>Hora</remote-alias>
+              <ordinal>39</ordinal>
+              <family>envolvidos1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5562</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_boletim</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[num_boletim]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>num_boletim</remote-alias>
+              <ordinal>40</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>105190</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>numero_envolvido</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[numero_envolvido]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>numero_envolvido</remote-alias>
+              <ordinal>41</ordinal>
+              <family>envolvidos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>condutor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[condutor]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>condutor</remote-alias>
+              <ordinal>42</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>codigo_severidade</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[codigo_severidade]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>codigo_severidade</remote-alias>
+              <ordinal>43</ordinal>
+              <family>envolvidos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>desc_severidade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[desc_severidade]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>desc_severidade</remote-alias>
+              <ordinal>44</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sexo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sexo]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>sexo</remote-alias>
+              <ordinal>45</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cinto_seguranca</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cinto_seguranca]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>cinto_seguranca</remote-alias>
+              <ordinal>46</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Embreagues</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Embreagues]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>Embreagues</remote-alias>
+              <ordinal>47</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Idade</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Idade]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>Idade</remote-alias>
+              <ordinal>48</ordinal>
+              <family>envolvidos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>143</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>categoria_habilitacao</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[categoria_habilitacao]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>categoria_habilitacao</remote-alias>
+              <ordinal>49</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>descricao_habilitacao</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[descricao_habilitacao]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>descricao_habilitacao</remote-alias>
+              <ordinal>50</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>especie_veiculo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[especie_veiculo]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>especie_veiculo</remote-alias>
+              <ordinal>51</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pedestre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pedestre]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>pedestre</remote-alias>
+              <ordinal>52</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>passageiro</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[passageiro]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>passageiro</remote-alias>
+              <ordinal>53</ordinal>
+              <family>envolvidos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Data</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Data (envolvidos)]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>Data</remote-alias>
+              <ordinal>54</ordinal>
+              <family>envolvidos</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>10621</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hora</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Hora (envolvidos)]</local-name>
+              <parent-name>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</parent-name>
+              <remote-alias>Hora</remote-alias>
+              <ordinal>55</ordinal>
+              <family>envolvidos</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5388</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nº_boletim</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nº_boletim]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>Nº_boletim</remote-alias>
+              <ordinal>56</ordinal>
+              <family>logradouros</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>89025</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nome_municipio</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nome_municipio]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>nome_municipio</remote-alias>
+              <ordinal>57</ordinal>
+              <family>logradouros</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seq_logradouros</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[seq_logradouros]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>seq_logradouros</remote-alias>
+              <ordinal>58</ordinal>
+              <family>logradouros</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_logradouro</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_logradouro]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>tipo_logradouro</remote-alias>
+              <ordinal>59</ordinal>
+              <family>logradouros</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nome_logradouro</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nome_logradouro]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>nome_logradouro</remote-alias>
+              <ordinal>60</ordinal>
+              <family>logradouros</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4810</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_bairro</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_bairro]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>tipo_bairro</remote-alias>
+              <ordinal>61</ordinal>
+              <family>logradouros</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>descricao_tipo_bairro</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[descricao_tipo_bairro]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>descricao_tipo_bairro</remote-alias>
+              <ordinal>62</ordinal>
+              <family>logradouros</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nº_imovel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nº_imovel]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>Nº_imovel</remote-alias>
+              <ordinal>63</ordinal>
+              <family>logradouros</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bairro</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bairro]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>Bairro</remote-alias>
+              <ordinal>64</ordinal>
+              <family>logradouros</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1720</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Data</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Data (logradouros)]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>Data</remote-alias>
+              <ordinal>65</ordinal>
+              <family>logradouros</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>7868</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hora</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Hora (logradouros)]</local-name>
+              <parent-name>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</parent-name>
+              <remote-alias>Hora</remote-alias>
+              <ordinal>66</ordinal>
+              <family>logradouros</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4217</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logradouros_7A4707B9B2564D5E951ACA57BF58B140]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='boletins' id='boletins_8E6BF7CBDBFB4042A75336654FA0EBDE'>
+            <properties context=''>
+              <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='boletins' table='[boletins$]' type='table'>
+                <columns gridOrigin='A1:U10001:no:A1:U10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='numero_boletim' ordinal='0' />
+                  <column datatype='string' name='tipo_acidente' ordinal='1' />
+                  <column datatype='string' name='desc_tipo_acidente' ordinal='2' />
+                  <column datatype='integer' name='cod_tempo' ordinal='3' />
+                  <column datatype='string' name='desc_tempo' ordinal='4' />
+                  <column datatype='integer' name='cod_pavimento' ordinal='5' />
+                  <column datatype='string' name='pavimento' ordinal='6' />
+                  <column datatype='integer' name='cod_regional' ordinal='7' />
+                  <column datatype='string' name='desc_regional' ordinal='8' />
+                  <column datatype='string' name='origem_boletim' ordinal='9' />
+                  <column datatype='integer' name='velocidade_permitida' ordinal='10' />
+                  <column datatype='string' name='indicador_fatalidade' ordinal='11' />
+                  <column datatype='integer' name='valor_ups' ordinal='12' />
+                  <column datatype='string' name='descricao_ups' ordinal='13' />
+                  <column datatype='date' name='Data' ordinal='14' />
+                  <column datatype='datetime' name='Hora' ordinal='15' />
+                  <column datatype='string' name='Faixa_hora' ordinal='16' />
+                  <column datatype='integer' name='Faixa_hora_num' ordinal='17' />
+                  <column datatype='integer' name='Mês' ordinal='18' />
+                  <column datatype='integer' name='Ano' ordinal='19' />
+                  <column datatype='integer' name='Dia' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='boletins_8E6BF7CBDBFB4042A75336654FA0EBDE' table='[Extract].[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]' type='table' />
+            </properties>
+          </object>
+          <object caption='coordenadas' id='coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0'>
+            <properties context=''>
+              <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='coordenadas' table='[coordenadas$]' type='table'>
+                <columns gridOrigin='A1:C10001:no:A1:C10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='numero_bol' ordinal='0' />
+                  <column datatype='real' name='longitude' ordinal='1' />
+                  <column datatype='real' name='latitude' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0' table='[Extract].[coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0]' type='table' />
+            </properties>
+          </object>
+          <object caption='envolvidos1' id='envolvidos_B9FC198BD67D4743A11F2D093605F2C5'>
+            <properties context=''>
+              <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='envolvidos1' table='[envolvidos$]' type='table'>
+                <columns gridOrigin='A1:P10001:no:A1:P10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='num_boletim' ordinal='0' />
+                  <column datatype='integer' name='numero_envolvido' ordinal='1' />
+                  <column datatype='string' name='condutor' ordinal='2' />
+                  <column datatype='integer' name='codigo_severidade' ordinal='3' />
+                  <column datatype='string' name='desc_severidade' ordinal='4' />
+                  <column datatype='string' name='sexo' ordinal='5' />
+                  <column datatype='string' name='cinto_seguranca' ordinal='6' />
+                  <column datatype='string' name='Embreagues' ordinal='7' />
+                  <column datatype='integer' name='Idade' ordinal='8' />
+                  <column datatype='string' name='categoria_habilitacao' ordinal='9' />
+                  <column datatype='string' name='descricao_habilitacao' ordinal='10' />
+                  <column datatype='string' name='especie_veiculo' ordinal='11' />
+                  <column datatype='string' name='pedestre' ordinal='12' />
+                  <column datatype='string' name='passageiro' ordinal='13' />
+                  <column datatype='date' name='Data' ordinal='14' />
+                  <column datatype='datetime' name='Hora' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='envolvidos_B9FC198BD67D4743A11F2D093605F2C5' table='[Extract].[envolvidos_B9FC198BD67D4743A11F2D093605F2C5]' type='table' />
+            </properties>
+          </object>
+          <object caption='envolvidos' id='envolvidos_C867F142FCAA4D439FF0AF700F0C6522'>
+            <properties context=''>
+              <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='envolvidos' table='[envolvidos$]' type='table'>
+                <columns gridOrigin='A1:P10001:no:A1:P10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='num_boletim' ordinal='0' />
+                  <column datatype='integer' name='numero_envolvido' ordinal='1' />
+                  <column datatype='string' name='condutor' ordinal='2' />
+                  <column datatype='integer' name='codigo_severidade' ordinal='3' />
+                  <column datatype='string' name='desc_severidade' ordinal='4' />
+                  <column datatype='string' name='sexo' ordinal='5' />
+                  <column datatype='string' name='cinto_seguranca' ordinal='6' />
+                  <column datatype='string' name='Embreagues' ordinal='7' />
+                  <column datatype='integer' name='Idade' ordinal='8' />
+                  <column datatype='string' name='categoria_habilitacao' ordinal='9' />
+                  <column datatype='string' name='descricao_habilitacao' ordinal='10' />
+                  <column datatype='string' name='especie_veiculo' ordinal='11' />
+                  <column datatype='string' name='pedestre' ordinal='12' />
+                  <column datatype='string' name='passageiro' ordinal='13' />
+                  <column datatype='date' name='Data' ordinal='14' />
+                  <column datatype='datetime' name='Hora' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='envolvidos_C867F142FCAA4D439FF0AF700F0C6522' table='[Extract].[envolvidos_C867F142FCAA4D439FF0AF700F0C6522]' type='table' />
+            </properties>
+          </object>
+          <object caption='logradouros' id='logradouros_7A4707B9B2564D5E951ACA57BF58B140'>
+            <properties context=''>
+              <relation connection='excel-direct.13mkesq19yuyy112yy2hc1ei6epj' name='logradouros' table='[logradouros$]' type='table'>
+                <columns gridOrigin='A1:K10001:no:A1:K10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Nº_boletim' ordinal='0' />
+                  <column datatype='string' name='nome_municipio' ordinal='1' />
+                  <column datatype='integer' name='seq_logradouros' ordinal='2' />
+                  <column datatype='string' name='tipo_logradouro' ordinal='3' />
+                  <column datatype='string' name='nome_logradouro' ordinal='4' />
+                  <column datatype='string' name='tipo_bairro' ordinal='5' />
+                  <column datatype='string' name='descricao_tipo_bairro' ordinal='6' />
+                  <column datatype='integer' name='Nº_imovel' ordinal='7' />
+                  <column datatype='string' name='Bairro' ordinal='8' />
+                  <column datatype='date' name='Data' ordinal='9' />
+                  <column datatype='datetime' name='Hora' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='logradouros_7A4707B9B2564D5E951ACA57BF58B140' table='[Extract].[logradouros_7A4707B9B2564D5E951ACA57BF58B140]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[numero_boletim]' />
+              <expression op='[numero_bol]' />
+            </expression>
+            <first-end-point object-id='boletins_8E6BF7CBDBFB4042A75336654FA0EBDE' />
+            <second-end-point object-id='coordenadas_7B59F067DC0F4ED0B8F7FD53F45EA8D0' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[numero_boletim]' />
+              <expression op='[num_boletim (envolvidos1)]' />
+            </expression>
+            <first-end-point object-id='boletins_8E6BF7CBDBFB4042A75336654FA0EBDE' />
+            <second-end-point object-id='envolvidos_B9FC198BD67D4743A11F2D093605F2C5' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[numero_boletim]' />
+              <expression op='[num_boletim]' />
+            </expression>
+            <first-end-point object-id='boletins_8E6BF7CBDBFB4042A75336654FA0EBDE' />
+            <second-end-point object-id='envolvidos_C867F142FCAA4D439FF0AF700F0C6522' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[numero_boletim]' />
+              <expression op='[Nº_boletim]' />
+            </expression>
+            <first-end-point object-id='boletins_8E6BF7CBDBFB4042A75336654FA0EBDE' />
+            <second-end-point object-id='logradouros_7A4707B9B2564D5E951ACA57BF58B140' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Cartão - Contagem de Acidentes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='boletins+ (dados_carga_pbh)' name='federated.1vjy2d51ccxnpg160gmgz0nrci1l' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vjy2d51ccxnpg160gmgz0nrci1l'>
+            <column-instance column='[numero_boletim]' derivation='CountD' name='[ctd:numero_boletim:qk]' pivot='key' type='quantitative' />
+            <column caption='Numero Boletim' datatype='string' name='[numero_boletim]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#dfedeb' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#a0cbe8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[ctd:numero_boletim:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='72'>Quantidade de acidentes</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='72'><![CDATA[<[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[ctd:numero_boletim:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5D7F8D02-3494-4F7C-9736-53A77FA29301}' />
+    </worksheet>
+    <worksheet name='Gráfico - Acidentes por Ano'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='boletins+ (dados_carga_pbh)' name='federated.1vjy2d51ccxnpg160gmgz0nrci1l' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vjy2d51ccxnpg160gmgz0nrci1l'>
+            <column datatype='date' name='[Data]' role='dimension' type='ordinal' />
+            <column caption='boletins' datatype='table' name='[__tableau_internal_object_id__].[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[boletins_8E6BF7CBDBFB4042A75336654FA0EBDE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:boletins_8E6BF7CBDBFB4042A75336654FA0EBDE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Data]' derivation='Year' name='[yr:Data:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[__tableau_internal_object_id__].[cnt:boletins_8E6BF7CBDBFB4042A75336654FA0EBDE:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#efe0e0</color>
+                <color>#edd0d1</color>
+                <color>#ecc0c1</color>
+                <color>#eab1b1</color>
+                <color>#e9a1a2</color>
+                <color>#e79293</color>
+                <color>#e58384</color>
+                <color>#e47475</color>
+                <color>#e26567</color>
+                <color>#e15759</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9f3f2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[__tableau_internal_object_id__].[cnt:boletins_8E6BF7CBDBFB4042A75336654FA0EBDE:qk]' />
+              <size column='[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[__tableau_internal_object_id__].[cnt:boletins_8E6BF7CBDBFB4042A75336654FA0EBDE:qk]' />
+              <text column='[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[__tableau_internal_object_id__].[cnt:boletins_8E6BF7CBDBFB4042A75336654FA0EBDE:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.88955801725387573' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[__tableau_internal_object_id__].[cnt:boletins_8E6BF7CBDBFB4042A75336654FA0EBDE:qk]</rows>
+        <cols>[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[yr:Data:ok]</cols>
+      </table>
+      <simple-id uuid='{43FDEB81-0DF4-4B73-A8B1-41B989EDE56C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='Cartão - Contagem de Acidentes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6486B5CD-3C5F-41E5-AAA1-70644F313CA1}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Gráfico - Acidentes por Ano'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='169'>
+            <card pane-specification-id='0' param='[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[__tableau_internal_object_id__].[cnt:boletins_8E6BF7CBDBFB4042A75336654FA0EBDE:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1vjy2d51ccxnpg160gmgz0nrci1l].[__tableau_internal_object_id__].[cnt:boletins_8E6BF7CBDBFB4042A75336654FA0EBDE:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CA3D4B05-E1AD-46EE-A3D7-7A5672140F11}' />
+    </window>
+  </windows>
+</workbook>

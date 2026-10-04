@@ -49,7 +49,7 @@ t.goto(x - 60.62, y + 65)
 t.pendown()
 
 
-
+t.pencolor("red")
 t.setheading(-60)
 t.circle(70, 120)
 
